@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripBoard - Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="employee-dashboard-page">
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        TRIPBOARD
+    </div>
+
+    <nav>
+        <a href="employee-dashboard.html" class="active">My Dashboard</a>
+        <a href="documents.html">My Documents</a>
+        <a href="home.html" class="logout-btn">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="employee-dashboard-container">
+
+    <!-- WELCOME -->
+
+    <section class="employee-welcome">
+
+        <div>
+            <p class="welcome-small">WELCOME BACK</p>
+
+            <h1>Rahul Sharma</h1>
+
+            <p>
+                Here's your business travel information and upcoming trip.
+            </p>
+        </div>
+
+        <div class="employee-dashboard-avatar">
+            RS
+        </div>
+
+    </section>
+
+
+    <!-- QUICK INFORMATION -->
+
+    <section class="employee-quick-stats">
+
+        <div class="employee-quick-card">
+
+            <div class="quick-card-icon">
+                ✈
+            </div>
+
+            <div>
+                <h3>1</h3>
+                <p>Upcoming Trip</p>
+            </div>
+
+        </div>
+
+
+        <div class="employee-quick-card">
+
+            <div class="quick-card-icon">
+                📅
+            </div>
+
+            <div>
+                <h3>20 Sept</h3>
+                <p>Next Departure</p>
+            </div>
+
+        </div>
+
+
+        <div class="employee-quick-card">
+
+            <div class="quick-card-icon">
+                ✓
+            </div>
+
+            <div>
+                <h3>4 / 5</h3>
+                <p>Documents Verified</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MY UPCOMING TRIP -->
+
+    <section class="employee-dashboard-section">
+
+        <div class="employee-section-heading">
+
+            <div>
+                <h2>MY UPCOMING TRIP</h2>
+
+                <p>
+                    Your assigned business trip.
+                </p>
+            </div>
+
+            <span class="trip-status upcoming">
+                Upcoming
+            </span>
+
+        </div>
+
+
+        <div class="employee-trip-card">
+
+            <div class="employee-trip-icon">
+                ✈
+            </div>
+
+
+            <div class="employee-trip-main">
+
+                <h2>
+                    Dubai Business Conference
+                </h2>
+
+                <p class="employee-trip-location">
+                    📍 Dubai, United Arab Emirates
+                </p>
+
+                <p class="employee-trip-date">
+                    📅 20 September 2026 – 27 September 2026
+                </p>
+
+                <span class="employee-purpose">
+                    Business Conference
+                </span>
+
+            </div>
+
+
+            <div class="employee-trip-action">
+
+                <a href="trip-details.html">
+                    View Trip Details →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRIP DETAILS -->
+
+    <section class="employee-dashboard-section">
+
+        <div class="employee-section-heading">
+
+            <div>
+                <h2>TRIP INFORMATION</h2>
+
+                <p>
+                    Important information for your business trip.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="employee-trip-info-grid">
+
+            <div class="employee-info-box">
+
+                <span>DESTINATION</span>
+
+                <strong>
+                    Dubai, UAE
+                </strong>
+
+            </div>
+
+
+            <div class="employee-info-box">
+
+                <span>DEPARTURE</span>
+
+                <strong>
+                    20 Sept 2026
+                </strong>
+
+            </div>
+
+
+            <div class="employee-info-box">
+
+                <span>RETURN</span>
+
+                <strong>
+                    27 Sept 2026
+                </strong>
+
+            </div>
+
+
+            <div class="employee-info-box">
+
+                <span>DURATION</span>
+
+                <strong>
+                    7 Days
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOCUMENTS -->
+
+    <section class="employee-dashboard-section">
+
+        <div class="employee-section-heading">
+
+            <div>
+                <h2>MY TRAVEL DOCUMENTS</h2>
+
+                <p>
+                    Check the status of your required travel documents.
+                </p>
+            </div>
+
+            <a href="documents.html" class="employee-documents-link">
+                View All →
+            </a>
+
+        </div>
+
+
+        <div class="employee-document-grid">
+
+            <!-- PASSPORT -->
+
+            <div class="employee-document-box">
+
+                <div class="employee-document-icon">
+                    🛂
+                </div>
+
+                <div>
+                    <h3>Passport</h3>
+
+                    <span class="employee-doc-status verified">
+                        ✓ Verified
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- VISA -->
+
+            <div class="employee-document-box">
+
+                <div class="employee-document-icon">
+                    📄
+                </div>
+
+                <div>
+                    <h3>Visa</h3>
+
+                    <span class="employee-doc-status verified">
+                        ✓ Verified
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- FLIGHT -->
+
+            <div class="employee-document-box pending">
+
+                <div class="employee-document-icon">
+                    🎫
+                </div>
+
+                <div>
+                    <h3>Flight Ticket</h3>
+
+                    <span class="employee-doc-status pending">
+                        ! Pending
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- INSURANCE -->
+
+            <div class="employee-document-box">
+
+                <div class="employee-document-icon">
+                    🛡
+                </div>
+
+                <div>
+                    <h3>Travel Insurance</h3>
+
+                    <span class="employee-doc-status verified">
+                        ✓ Verified
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- HOTEL -->
+
+            <div class="employee-document-box">
+
+                <div class="employee-document-icon">
+                    🏨
+                </div>
+
+                <div>
+                    <h3>Hotel Booking</h3>
+
+                    <span class="employee-doc-status verified">
+                        ✓ Verified
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- IMPORTANT NOTICE -->
+
+    <section class="employee-notice">
+
+        <div class="notice-icon">
+            !
+        </div>
+
+        <div>
+
+            <h3>Action Required</h3>
+
+            <p>
+                Your flight ticket is still pending.
+                Please upload or submit the required document
+                before your departure.
+            </p>
+
+        </div>
+
+        <a href="documents.html">
+            Manage Documents →
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 TripBoard. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
