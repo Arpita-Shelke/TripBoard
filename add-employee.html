@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TripBoard - Add Employee</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="add-employee-page">
+
+
+<!-- HEADER -->
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        TRIPBOARD
+    </div>
+
+    <nav>
+
+        <a href="admin.html">
+            Dashboard
+        </a>
+
+        <a href="employees.html">
+            Employees
+        </a>
+
+        <a href="trips.html">
+            Trips
+        </a>
+
+        <a href="home.html" class="logout-btn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- MAIN -->
+
+<main class="add-employee-container">
+
+
+    <!-- PAGE HEADING -->
+
+    <div class="add-heading">
+
+        <div>
+
+            <h1>ADD EMPLOYEE</h1>
+
+            <p>
+                Add a new employee to your company.
+            </p>
+
+        </div>
+
+        <a href="employees.html" class="back-btn">
+            ← Back to Employees
+        </a>
+
+    </div>
+
+
+
+    <!-- FORM CARD -->
+
+    <section class="employee-form-card">
+
+
+        <div class="form-header">
+
+            <div class="form-icon">
+                👤
+            </div>
+
+            <div>
+
+                <h2>Employee Information</h2>
+
+                <p>
+                    Enter the employee's details below.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <form>
+
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter employee name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- EMPLOYEE ID -->
+
+            <div class="form-group">
+
+                <label for="employee-id">
+                    Employee ID
+                </label>
+
+                <input
+                    type="text"
+                    id="employee-id"
+                    placeholder="Example: EMP005"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="employee@company.com"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- PHONE -->
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter phone number"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- DEPARTMENT -->
+
+            <div class="form-group">
+
+                <label for="department">
+                    Department
+                </label>
+
+                <select id="department" required>
+
+                    <option value="">
+                        Select Department
+                    </option>
+
+                    <option value="IT">
+                        IT
+                    </option>
+
+                    <option value="Finance">
+                        Finance
+                    </option>
+
+                    <option value="HR">
+                        Human Resources
+                    </option>
+
+                    <option value="Marketing">
+                        Marketing
+                    </option>
+
+                    <option value="Sales">
+                        Sales
+                    </option>
+
+                    <option value="Operations">
+                        Operations
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- DESIGNATION -->
+
+            <div class="form-group">
+
+                <label for="designation">
+                    Designation
+                </label>
+
+                <input
+                    type="text"
+                    id="designation"
+                    placeholder="Example: Software Engineer"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- DATE -->
+
+            <div class="form-group">
+
+                <label for="joining-date">
+                    Date of Joining
+                </label>
+
+                <input
+                    type="date"
+                    id="joining-date"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- BUTTONS -->
+
+            <div class="form-buttons">
+
+                <a
+                    href="employees.html"
+                    class="cancel-btn"
+                >
+                    Cancel
+                </a>
+
+
+                <button
+                    type="submit"
+                    class="save-employee-btn"
+                >
+                    + Add Employee
+                </button>
+
+            </div>
+
+
+        </form>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 TripBoard. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

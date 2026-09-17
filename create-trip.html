@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripBoard - Create Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="create-trip-page">
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        TRIPBOARD
+    </div>
+
+    <nav>
+        <a href="admin.html">Dashboard</a>
+        <a href="employees.html">Employees</a>
+        <a href="trips.html" class="active">Trips</a>
+        <a href="home.html" class="logout-btn">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="create-trip-container">
+
+    <!-- PAGE HEADING -->
+
+    <div class="create-trip-heading">
+
+        <div>
+            <h1>CREATE NEW TRIP</h1>
+            <p>Create and assign a business trip to your employees.</p>
+        </div>
+
+        <a href="trips.html" class="back-btn">
+            ← Back to Trips
+        </a>
+
+    </div>
+
+
+    <!-- FORM -->
+
+    <form class="trip-form-card">
+
+        <div class="form-header">
+
+            <div class="trip-form-icon">
+                ✈
+            </div>
+
+            <div>
+                <h2>Trip Information</h2>
+                <p>Enter the basic details of the business trip.</p>
+            </div>
+
+        </div>
+
+
+        <!-- DESTINATION -->
+
+        <div class="form-section">
+
+            <h3>TRIP DETAILS</h3>
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="destination">
+                        Destination
+                    </label>
+
+                    <input
+                        type="text"
+                        id="destination"
+                        placeholder="Enter destination"
+                        value="Dubai, UAE"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="purpose">
+                        Purpose
+                    </label>
+
+                    <select id="purpose" required>
+
+                        <option>Business Conference</option>
+                        <option>Client Meeting</option>
+                        <option>Business Summit</option>
+                        <option>Training</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATES -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="start-date">
+                        Start Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="start-date"
+                        value="2026-09-20"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="end-date">
+                        End Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="end-date"
+                        value="2026-09-27"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- EMPLOYEE SELECTION -->
+
+        <div class="form-section employee-selection">
+
+            <div class="employee-selection-heading">
+
+                <div>
+                    <h3>ASSIGN EMPLOYEES</h3>
+                    <p>Select the employees who will be travelling.</p>
+                </div>
+
+                <span class="selected-count">
+                    2 Selected
+                </span>
+
+            </div>
+
+
+            <!-- RAHUL -->
+
+            <label class="employee-select-card">
+
+                <input
+                    type="checkbox"
+                    name="employees"
+                    value="rahul"
+                    checked
+                >
+
+                <div class="employee-select-avatar">
+                    RS
+                </div>
+
+                <div class="employee-select-info">
+
+                    <h4>Rahul Sharma</h4>
+
+                    <p>
+                        EMP001 · Software Engineer · IT
+                    </p>
+
+                </div>
+
+                <span class="employee-check">
+                    ✓
+                </span>
+
+            </label>
+
+
+            <!-- AMAN -->
+
+            <label class="employee-select-card">
+
+                <input
+                    type="checkbox"
+                    name="employees"
+                    value="aman"
+                    checked
+                >
+
+                <div class="employee-select-avatar">
+                    AP
+                </div>
+
+                <div class="employee-select-info">
+
+                    <h4>Aman Patel</h4>
+
+                    <p>
+                        EMP002 · Finance Executive · Finance
+                    </p>
+
+                </div>
+
+                <span class="employee-check">
+                    ✓
+                </span>
+
+            </label>
+
+
+            <!-- PRIYA -->
+
+            <label class="employee-select-card">
+
+                <input
+                    type="checkbox"
+                    name="employees"
+                    value="priya"
+                >
+
+                <div class="employee-select-avatar">
+                    PM
+                </div>
+
+                <div class="employee-select-info">
+
+                    <h4>Priya Mehta</h4>
+
+                    <p>
+                        EMP003 · HR Executive · HR
+                    </p>
+
+                </div>
+
+                <span class="employee-check">
+                    ✓
+                </span>
+
+            </label>
+
+        </div>
+
+
+        <!-- DOCUMENT CHECKLIST -->
+
+        <div class="form-section">
+
+            <h3>TRAVEL DOCUMENTS</h3>
+
+            <p class="document-note">
+                These documents will be created automatically for each
+                selected employee.
+            </p>
+
+            <div class="document-preview">
+
+                <span>Passport</span>
+                <span>Visa</span>
+                <span>Flight Ticket</span>
+                <span>Travel Insurance</span>
+                <span>Hotel Booking</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="trip-form-buttons">
+
+            <a href="trips.html" class="cancel-trip-btn">
+                Cancel
+            </a>
+
+            <button type="submit" class="create-trip-submit">
+                ✈ Create Trip
+            </button>
+
+        </div>
+
+    </form>
+
+</main>
+
+
+<footer>
+    <p>© 2026 TripBoard. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>

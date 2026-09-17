@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripBoard - Trip Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="trip-details-page">
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        TRIPBOARD
+    </div>
+
+    <nav>
+        <a href="admin.html">Dashboard</a>
+        <a href="employees.html">Employees</a>
+        <a href="trips.html" class="active">Trips</a>
+        <a href="home.html" class="logout-btn">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="trip-details-container">
+
+    <!-- TOP SECTION -->
+
+    <div class="trip-details-top">
+
+        <a href="trips.html" class="back-btn">
+            ← Back to Trips
+        </a>
+
+        <a href="create-trip.html" class="edit-trip-btn">
+            ✎ Edit Trip
+        </a>
+
+    </div>
+
+
+    <!-- TRIP HERO -->
+
+    <section class="trip-hero">
+
+        <div class="trip-hero-left">
+
+            <div class="trip-large-icon">
+                ✈
+            </div>
+
+            <div>
+
+                <span class="trip-status upcoming">
+                    Upcoming
+                </span>
+
+                <h1>Dubai Business Conference</h1>
+
+                <p>
+                    📍 Dubai, United Arab Emirates
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="trip-hero-purpose">
+
+            <span>PURPOSE</span>
+
+            <strong>
+                Business Conference
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRIP INFORMATION -->
+
+    <section class="trip-details-section">
+
+        <div class="section-heading">
+
+            <div>
+                <h2>TRIP INFORMATION</h2>
+                <p>Basic information about this business trip.</p>
+            </div>
+
+        </div>
+
+
+        <div class="trip-info-grid">
+
+            <div class="trip-info-box">
+
+                <span class="info-label">
+                    DESTINATION
+                </span>
+
+                <h3>
+                    Dubai, UAE
+                </h3>
+
+                <p>
+                    United Arab Emirates
+                </p>
+
+            </div>
+
+
+            <div class="trip-info-box">
+
+                <span class="info-label">
+                    START DATE
+                </span>
+
+                <h3>
+                    20 September 2026
+                </h3>
+
+                <p>
+                    Departure
+                </p>
+
+            </div>
+
+
+            <div class="trip-info-box">
+
+                <span class="info-label">
+                    END DATE
+                </span>
+
+                <h3>
+                    27 September 2026
+                </h3>
+
+                <p>
+                    Return
+                </p>
+
+            </div>
+
+
+            <div class="trip-info-box">
+
+                <span class="info-label">
+                    DURATION
+                </span>
+
+                <h3>
+                    7 Days
+                </h3>
+
+                <p>
+                    Business Travel
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ASSIGNED EMPLOYEES -->
+
+    <section class="trip-details-section">
+
+        <div class="section-heading">
+
+            <div>
+                <h2>ASSIGNED EMPLOYEES</h2>
+
+                <p>
+                    Employees travelling on this business trip.
+                </p>
+            </div>
+
+            <span class="employee-count">
+                2 Employees
+            </span>
+
+        </div>
+
+
+        <div class="trip-employees">
+
+
+            <!-- RAHUL -->
+
+            <div class="trip-employee-card">
+
+                <div class="trip-employee-avatar">
+                    RS
+                </div>
+
+                <div class="trip-employee-info">
+
+                    <h3>
+                        Rahul Sharma
+                    </h3>
+
+                    <p>
+                        EMP001 · Software Engineer
+                    </p>
+
+                    <span>
+                        IT Department
+                    </span>
+
+                </div>
+
+                <div class="employee-trip-status">
+                    Assigned
+                </div>
+
+                <a href="employee-details.html">
+                    View Employee →
+                </a>
+
+            </div>
+
+
+            <!-- AMAN -->
+
+            <div class="trip-employee-card">
+
+                <div class="trip-employee-avatar">
+                    AP
+                </div>
+
+                <div class="trip-employee-info">
+
+                    <h3>
+                        Aman Patel
+                    </h3>
+
+                    <p>
+                        EMP002 · Finance Executive
+                    </p>
+
+                    <span>
+                        Finance Department
+                    </span>
+
+                </div>
+
+                <div class="employee-trip-status">
+                    Assigned
+                </div>
+
+                <a href="employee-details.html">
+                    View Employee →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRAVEL DOCUMENTS -->
+
+    <section class="trip-details-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2>TRAVEL DOCUMENTS</h2>
+
+                <p>
+                    Document status for employees travelling on this trip.
+                </p>
+
+            </div>
+
+            <a href="documents.html" class="manage-documents-btn">
+                Manage Documents →
+            </a>
+
+        </div>
+
+
+        <!-- DOCUMENT TABLE -->
+
+        <div class="document-table-wrapper">
+
+            <table class="trip-document-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Employee
+                        </th>
+
+                        <th>
+                            Passport
+                        </th>
+
+                        <th>
+                            Visa
+                        </th>
+
+                        <th>
+                            Flight Ticket
+                        </th>
+
+                        <th>
+                            Insurance
+                        </th>
+
+                        <th>
+                            Hotel
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- RAHUL -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="table-employee">
+
+                                <div class="small-avatar">
+                                    RS
+                                </div>
+
+                                <strong>
+                                    Rahul Sharma
+                                </strong>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            <span class="doc-status verified">
+                                ✓ Verified
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="doc-status verified">
+                                ✓ Verified
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="doc-status pending">
+                                ! Pending
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="doc-status verified">
+                                ✓ Verified
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="doc-status verified">
+                                ✓ Verified
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <!-- AMAN -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="table-employee">
+
+                                <div class="small-avatar">
+                                    AP
+                                </div>
+
+                                <strong>
+                                    Aman Patel
+                                </strong>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            <span class="doc-status verified">
+                                ✓ Verified
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="doc-status verified">
+                                ✓ Verified
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="doc-status verified">
+                                ✓ Verified
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="doc-status verified">
+                                ✓ Verified
+                            </span>
+                        </td>
+
+                        <td>
+                            <span class="doc-status pending">
+                                ! Pending
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRIP SUMMARY -->
+
+    <section class="trip-summary-box">
+
+        <div>
+
+            <h2>
+                Trip Readiness
+            </h2>
+
+            <p>
+                Most travel documents have been verified.
+                Complete the remaining pending documents before departure.
+            </p>
+
+        </div>
+
+        <div class="readiness">
+
+            <strong>
+                8 / 10
+            </strong>
+
+            <span>
+                Documents Verified
+            </span>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 TripBoard. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TripBoard - Employee Details</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="employee-details-page">
+
+
+<!-- =========================
+     HEADER
+     ========================= -->
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        TRIPBOARD
+    </div>
+
+    <nav>
+
+        <a href="admin.html">
+            Dashboard
+        </a>
+
+        <a href="employees.html" class="active">
+            Employees
+        </a>
+
+        <a href="trips.html">
+            Trips
+        </a>
+
+        <a href="home.html" class="logout-btn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+     ========================= -->
+
+<main class="employee-details-container">
+
+
+    <!-- PAGE TOP -->
+
+    <div class="details-top">
+
+        <a href="employees.html" class="back-btn">
+            ← Back to Employees
+        </a>
+
+        <a href="#" class="edit-employee-btn">
+            Edit Employee
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         EMPLOYEE PROFILE
+         ========================= -->
+
+    <section class="employee-profile-card">
+
+
+        <div class="large-avatar">
+            R
+        </div>
+
+
+        <div class="profile-info">
+
+            <h1>Rahul Sharma</h1>
+
+            <p class="employee-id">
+                Employee ID: EMP001
+            </p>
+
+            <span class="profile-status">
+                ● Travelling
+            </span>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         EMPLOYEE INFORMATION
+         ========================= -->
+
+    <section class="details-section">
+
+
+        <h2>EMPLOYEE INFORMATION</h2>
+
+
+        <div class="details-grid">
+
+
+            <div class="detail-item">
+
+                <span>Full Name</span>
+
+                <strong>
+                    Rahul Sharma
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>Employee ID</span>
+
+                <strong>
+                    EMP001
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>Email Address</span>
+
+                <strong>
+                    rahul@tripboard.com
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>Phone Number</span>
+
+                <strong>
+                    +91 98765 43210
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>Department</span>
+
+                <strong>
+                    IT
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>Designation</span>
+
+                <strong>
+                    Software Engineer
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>Date of Joining</span>
+
+                <strong>
+                    15 June 2024
+                </strong>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <span>Current Status</span>
+
+                <strong class="travelling-text">
+                    Travelling
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         ASSIGNED TRIP
+         ========================= -->
+
+    <section class="details-section">
+
+
+        <div class="details-section-heading">
+
+            <h2>ASSIGNED TRIP</h2>
+
+            <a href="trip-details.html">
+                View Full Trip →
+            </a>
+
+        </div>
+
+
+        <div class="assigned-trip-card">
+
+
+            <div class="assigned-trip-icon">
+                ✈
+            </div>
+
+
+            <div class="assigned-trip-main">
+
+                <h3>
+                    Dubai Business Conference
+                </h3>
+
+                <p>
+                    📍 Dubai, UAE
+                </p>
+
+                <p>
+                    📅 20 Sept – 27 Sept
+                </p>
+
+            </div>
+
+
+            <div class="assigned-trip-purpose">
+
+                <span>
+                    Business Conference
+                </span>
+
+                <p>
+                    Trip Status: <strong>Upcoming</strong>
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         TRAVEL DOCUMENTS
+         ========================= -->
+
+    <section class="details-section">
+
+
+        <div class="details-section-heading">
+
+            <h2>TRAVEL DOCUMENTS</h2>
+
+            <a href="documents.html">
+                Manage Documents →
+            </a>
+
+        </div>
+
+
+        <div class="document-grid">
+
+
+            <!-- PASSPORT -->
+
+            <div class="document-card">
+
+                <div class="document-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h3>Passport</h3>
+
+                    <p class="document-complete">
+                        Verified
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- VISA -->
+
+            <div class="document-card">
+
+                <div class="document-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h3>Visa</h3>
+
+                    <p class="document-complete">
+                        Verified
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FLIGHT -->
+
+            <div class="document-card">
+
+                <div class="document-icon pending">
+                    !
+                </div>
+
+                <div>
+
+                    <h3>Flight Ticket</h3>
+
+                    <p class="document-pending">
+                        Pending
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INSURANCE -->
+
+            <div class="document-card">
+
+                <div class="document-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h3>Travel Insurance</h3>
+
+                    <p class="document-complete">
+                        Verified
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HOTEL -->
+
+            <div class="document-card">
+
+                <div class="document-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h3>Hotel Booking</h3>
+
+                    <p class="document-complete">
+                        Verified
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+    <p>
+        © 2026 TripBoard. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

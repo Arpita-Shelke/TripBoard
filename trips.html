@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripBoard - Trip Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="trips-page">
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        TRIPBOARD
+    </div>
+
+    <nav>
+        <a href="admin.html">Dashboard</a>
+        <a href="employees.html">Employees</a>
+        <a href="trips.html" class="active">Trips</a>
+        <a href="home.html" class="logout-btn">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="trips-container">
+
+    <!-- PAGE HEADING -->
+
+    <div class="trips-heading">
+
+        <div>
+            <h1>TRIP MANAGEMENT</h1>
+            <p>Create, manage and monitor your company's business trips.</p>
+        </div>
+
+        <a href="create-trip.html" class="create-trip-btn">
+            ＋ Create New Trip
+        </a>
+
+    </div>
+
+
+    <!-- SUMMARY CARDS -->
+
+    <section class="trip-summary">
+
+        <div class="trip-stat">
+
+            <div class="trip-stat-icon">
+                ✈
+            </div>
+
+            <div>
+                <h3>5</h3>
+                <p>Total Trips</p>
+            </div>
+
+        </div>
+
+
+        <div class="trip-stat">
+
+            <div class="trip-stat-icon">
+                🌍
+            </div>
+
+            <div>
+                <h3>3</h3>
+                <p>Active Trips</p>
+            </div>
+
+        </div>
+
+
+        <div class="trip-stat">
+
+            <div class="trip-stat-icon">
+                📅
+            </div>
+
+            <div>
+                <h3>2</h3>
+                <p>Upcoming Trips</p>
+            </div>
+
+        </div>
+
+
+        <div class="trip-stat">
+
+            <div class="trip-stat-icon">
+                👥
+            </div>
+
+            <div>
+                <h3>8</h3>
+                <p>Employees Travelling</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRIP LIST -->
+
+    <section class="trip-list-section">
+
+        <div class="trip-list-top">
+
+            <div>
+                <h2>ALL BUSINESS TRIPS</h2>
+                <p>View and manage all company trips.</p>
+            </div>
+
+            <select class="trip-filter">
+
+                <option>All Trips</option>
+                <option>Upcoming</option>
+                <option>Active</option>
+                <option>Completed</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- TRIP CARD 1 -->
+
+        <div class="trip-card">
+
+            <div class="trip-card-left">
+
+                <div class="trip-card-icon">
+                    ✈
+                </div>
+
+                <div class="trip-card-details">
+
+                    <h3>Dubai Business Conference</h3>
+
+                    <p class="trip-location">
+                        📍 Dubai, UAE
+                    </p>
+
+                    <p class="trip-date">
+                        📅 20 Sept – 27 Sept
+                    </p>
+
+                    <span class="trip-purpose">
+                        Business Conference
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="trip-card-middle">
+
+                <p class="trip-label">
+                    EMPLOYEES
+                </p>
+
+                <div class="employee-mini-list">
+
+                    <span>RS</span>
+                    <span>AP</span>
+
+                </div>
+
+                <p>
+                    Rahul Sharma, Aman Patel
+                </p>
+
+            </div>
+
+
+            <div class="trip-card-status">
+
+                <span class="trip-status upcoming">
+                    Upcoming
+                </span>
+
+                <a href="trip-details.html" class="trip-view-btn">
+                    View Trip →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- TRIP CARD 2 -->
+
+        <div class="trip-card">
+
+            <div class="trip-card-left">
+
+                <div class="trip-card-icon">
+                    ✈
+                </div>
+
+                <div class="trip-card-details">
+
+                    <h3>Singapore Client Meeting</h3>
+
+                    <p class="trip-location">
+                        📍 Singapore
+                    </p>
+
+                    <p class="trip-date">
+                        📅 12 Sept – 16 Sept
+                    </p>
+
+                    <span class="trip-purpose">
+                        Client Meeting
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="trip-card-middle">
+
+                <p class="trip-label">
+                    EMPLOYEES
+                </p>
+
+                <div class="employee-mini-list">
+
+                    <span>NS</span>
+
+                </div>
+
+                <p>
+                    Neha Joshi
+                </p>
+
+            </div>
+
+
+            <div class="trip-card-status">
+
+                <span class="trip-status active">
+                    Active
+                </span>
+
+                <a href="trip-details.html" class="trip-view-btn">
+                    View Trip →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- TRIP CARD 3 -->
+
+        <div class="trip-card">
+
+            <div class="trip-card-left">
+
+                <div class="trip-card-icon">
+                    ✈
+                </div>
+
+                <div class="trip-card-details">
+
+                    <h3>London Business Summit</h3>
+
+                    <p class="trip-location">
+                        📍 London, UK
+                    </p>
+
+                    <p class="trip-date">
+                        📅 05 Aug – 10 Aug
+                    </p>
+
+                    <span class="trip-purpose">
+                        Business Summit
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="trip-card-middle">
+
+                <p class="trip-label">
+                    EMPLOYEES
+                </p>
+
+                <div class="employee-mini-list">
+
+                    <span>VK</span>
+                    <span>SK</span>
+
+                </div>
+
+                <p>
+                    Varun Kumar, Sneha Kapoor
+                </p>
+
+            </div>
+
+
+            <div class="trip-card-status">
+
+                <span class="trip-status completed">
+                    Completed
+                </span>
+
+                <a href="trip-details.html" class="trip-view-btn">
+                    View Trip →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 TripBoard. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>

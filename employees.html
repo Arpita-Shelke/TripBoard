@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TripBoard - Employees</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="employees-page">
+
+
+<!-- =========================
+     HEADER
+     ========================= -->
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        TRIPBOARD
+    </div>
+
+    <nav>
+
+        <a href="admin.html">
+            Dashboard
+        </a>
+
+        <a href="employees.html" class="active">
+            Employees
+        </a>
+
+        <a href="trips.html">
+            Trips
+        </a>
+
+        <a href="home.html" class="logout-btn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+     ========================= -->
+
+<main class="employees-container">
+
+
+    <!-- PAGE TITLE -->
+
+    <div class="employees-heading">
+
+        <div>
+
+            <h1>EMPLOYEE MANAGEMENT</h1>
+
+            <p>
+                Manage your company's employees and their business trips.
+            </p>
+
+        </div>
+
+
+        <a href="add-employee.html" class="add-employee-btn">
+            + Add Employee
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         EMPLOYEE SUMMARY
+         ========================= -->
+
+    <div class="employee-summary">
+
+
+        <div class="employee-stat">
+
+            <span class="summary-icon">👥</span>
+
+            <div>
+
+                <h3>12</h3>
+
+                <p>Total Employees</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="employee-stat">
+
+            <span class="summary-icon">✈</span>
+
+            <div>
+
+                <h3>8</h3>
+
+                <p>Employees Travelling</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="employee-stat">
+
+            <span class="summary-icon">✓</span>
+
+            <div>
+
+                <h3>4</h3>
+
+                <p>Available</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         EMPLOYEE TABLE
+         ========================= -->
+
+    <section class="employee-table-section">
+
+
+        <div class="table-top">
+
+            <h2>ALL EMPLOYEES</h2>
+
+
+            <input
+                type="text"
+                placeholder="Search employee..."
+                class="employee-search"
+            >
+
+        </div>
+
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>Employee</th>
+
+                        <th>Email</th>
+
+                        <th>Department</th>
+
+                        <th>Assigned Trip</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <!-- RAHUL -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="employee-name">
+
+                                <div class="employee-avatar">
+                                    R
+                                </div>
+
+                                <div>
+
+                                    <strong>Rahul Sharma</strong>
+
+                                    <small>EMP001</small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            rahul@tripboard.com
+                        </td>
+
+
+                        <td>
+                            IT
+                        </td>
+
+
+                        <td>
+
+                            <span class="trip-tag">
+                                Dubai
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="status travelling">
+                                Travelling
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="employee-details.html"
+                               class="view-btn">
+                                View
+                            </a>
+
+                            <a href="#"
+                               class="edit-btn">
+                                Edit
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- AMAN -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="employee-name">
+
+                                <div class="employee-avatar">
+                                    A
+                                </div>
+
+                                <div>
+
+                                    <strong>Aman Patel</strong>
+
+                                    <small>EMP002</small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            aman@tripboard.com
+                        </td>
+
+
+                        <td>
+                            Finance
+                        </td>
+
+
+                        <td>
+
+                            <span class="trip-tag">
+                                Dubai
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="status travelling">
+                                Travelling
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="employee-details.html"
+                               class="view-btn">
+                                View
+                            </a>
+
+                            <a href="#"
+                               class="edit-btn">
+                                Edit
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- PRIYA -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="employee-name">
+
+                                <div class="employee-avatar">
+                                    P
+                                </div>
+
+                                <div>
+
+                                    <strong>Priya Mehta</strong>
+
+                                    <small>EMP003</small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            priya@tripboard.com
+                        </td>
+
+
+                        <td>
+                            HR
+                        </td>
+
+
+                        <td>
+
+                            <span class="not-assigned">
+                                Not Assigned
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="status available">
+                                Available
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="employee-details.html"
+                               class="view-btn">
+                                View
+                            </a>
+
+                            <a href="#"
+                               class="edit-btn">
+                                Edit
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- NEHA -->
+
+                    <tr>
+
+                        <td>
+
+                            <div class="employee-name">
+
+                                <div class="employee-avatar">
+                                    N
+                                </div>
+
+                                <div>
+
+                                    <strong>Neha Joshi</strong>
+
+                                    <small>EMP004</small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+                            neha@tripboard.com
+                        </td>
+
+
+                        <td>
+                            Marketing
+                        </td>
+
+
+                        <td>
+
+                            <span class="trip-tag">
+                                Singapore
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="status travelling">
+                                Travelling
+                            </span>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="employee-details.html"
+                               class="view-btn">
+                                View
+                            </a>
+
+                            <a href="#"
+                               class="edit-btn">
+                                Edit
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+    <p>
+        © 2026 TripBoard. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

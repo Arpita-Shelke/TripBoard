@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripBoard - Travel Documents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="documents-page">
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        TRIPBOARD
+    </div>
+
+    <nav>
+        <a href="admin.html">Dashboard</a>
+        <a href="employees.html">Employees</a>
+        <a href="trips.html">Trips</a>
+        <a href="home.html" class="logout-btn">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="documents-container">
+
+    <!-- PAGE HEADING -->
+
+    <div class="documents-heading">
+
+        <div>
+            <h1>TRAVEL DOCUMENTS</h1>
+            <p>Manage and monitor employee travel documents.</p>
+        </div>
+
+        <a href="trips.html" class="back-btn">
+            ← Back to Trips
+        </a>
+
+    </div>
+
+
+    <!-- SUMMARY -->
+
+    <section class="document-summary">
+
+        <div class="document-stat">
+
+            <div class="document-stat-icon">
+                ✓
+            </div>
+
+            <div>
+                <h3>8</h3>
+                <p>Verified Documents</p>
+            </div>
+
+        </div>
+
+
+        <div class="document-stat">
+
+            <div class="document-stat-icon pending-icon">
+                !
+            </div>
+
+            <div>
+                <h3>2</h3>
+                <p>Pending Documents</p>
+            </div>
+
+        </div>
+
+
+        <div class="document-stat">
+
+            <div class="document-stat-icon">
+                👥
+            </div>
+
+            <div>
+                <h3>2</h3>
+                <p>Employees</p>
+            </div>
+
+        </div>
+
+
+        <div class="document-stat">
+
+            <div class="document-stat-icon">
+                ✈
+            </div>
+
+            <div>
+                <h3>1</h3>
+                <p>Upcoming Trip</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRIP SELECTOR -->
+
+    <section class="document-trip-header">
+
+        <div>
+
+            <span class="document-label">
+                SELECTED TRIP
+            </span>
+
+            <h2>
+                Dubai Business Conference
+            </h2>
+
+            <p>
+                📍 Dubai, UAE &nbsp; | &nbsp;
+                📅 20 Sept – 27 Sept
+            </p>
+
+        </div>
+
+        <span class="trip-status upcoming">
+            Upcoming
+        </span>
+
+    </section>
+
+
+    <!-- DOCUMENT CHECKLIST -->
+
+    <section class="documents-section">
+
+        <div class="documents-section-heading">
+
+            <div>
+                <h2>DOCUMENT CHECKLIST</h2>
+
+                <p>
+                    Check the status of each required travel document.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- RAHUL -->
+
+        <div class="employee-document-card">
+
+            <div class="document-employee-header">
+
+                <div class="document-avatar">
+                    RS
+                </div>
+
+                <div>
+                    <h3>Rahul Sharma</h3>
+
+                    <p>
+                        EMP001 · Software Engineer · IT
+                    </p>
+                </div>
+
+                <span class="document-progress">
+                    4 / 5 Verified
+                </span>
+
+            </div>
+
+
+            <div class="document-checklist">
+
+                <!-- Passport -->
+
+                <div class="document-item">
+
+                    <div class="document-item-icon">
+                        🛂
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Passport</h4>
+                        <p>Passport verification</p>
+
+                    </div>
+
+                    <span class="document-status verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="document-action">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- Visa -->
+
+                <div class="document-item">
+
+                    <div class="document-item-icon">
+                        📄
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Visa</h4>
+                        <p>Travel visa</p>
+
+                    </div>
+
+                    <span class="document-status verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="document-action">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- Flight Ticket -->
+
+                <div class="document-item pending-document">
+
+                    <div class="document-item-icon">
+                        🎫
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Flight Ticket</h4>
+                        <p>Round-trip flight ticket</p>
+
+                    </div>
+
+                    <span class="document-status pending">
+                        ! Pending
+                    </span>
+
+                    <button class="document-action upload">
+                        Upload
+                    </button>
+
+                </div>
+
+
+                <!-- Insurance -->
+
+                <div class="document-item">
+
+                    <div class="document-item-icon">
+                        🛡
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Travel Insurance</h4>
+                        <p>Travel insurance certificate</p>
+
+                    </div>
+
+                    <span class="document-status verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="document-action">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- Hotel -->
+
+                <div class="document-item">
+
+                    <div class="document-item-icon">
+                        🏨
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Hotel Booking</h4>
+                        <p>Hotel reservation details</p>
+
+                    </div>
+
+                    <span class="document-status verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="document-action">
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- AMAN -->
+
+        <div class="employee-document-card">
+
+            <div class="document-employee-header">
+
+                <div class="document-avatar">
+                    AP
+                </div>
+
+                <div>
+                    <h3>Aman Patel</h3>
+
+                    <p>
+                        EMP002 · Finance Executive · Finance
+                    </p>
+                </div>
+
+                <span class="document-progress">
+                    4 / 5 Verified
+                </span>
+
+            </div>
+
+
+            <div class="document-checklist">
+
+                <!-- Passport -->
+
+                <div class="document-item">
+
+                    <div class="document-item-icon">
+                        🛂
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Passport</h4>
+                        <p>Passport verification</p>
+
+                    </div>
+
+                    <span class="document-status verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="document-action">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- Visa -->
+
+                <div class="document-item">
+
+                    <div class="document-item-icon">
+                        📄
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Visa</h4>
+                        <p>Travel visa</p>
+
+                    </div>
+
+                    <span class="document-status verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="document-action">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- Flight Ticket -->
+
+                <div class="document-item">
+
+                    <div class="document-item-icon">
+                        🎫
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Flight Ticket</h4>
+                        <p>Round-trip flight ticket</p>
+
+                    </div>
+
+                    <span class="document-status verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="document-action">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- Insurance -->
+
+                <div class="document-item">
+
+                    <div class="document-item-icon">
+                        🛡
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Travel Insurance</h4>
+                        <p>Travel insurance certificate</p>
+
+                    </div>
+
+                    <span class="document-status verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="document-action">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- Hotel -->
+
+                <div class="document-item pending-document">
+
+                    <div class="document-item-icon">
+                        🏨
+                    </div>
+
+                    <div class="document-item-info">
+
+                        <h4>Hotel Booking</h4>
+                        <p>Hotel reservation details</p>
+
+                    </div>
+
+                    <span class="document-status pending">
+                        ! Pending
+                    </span>
+
+                    <button class="document-action upload">
+                        Upload
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REMINDER -->
+
+    <section class="document-reminder">
+
+        <div class="reminder-icon">
+            !
+        </div>
+
+        <div>
+
+            <h3>Documents Require Attention</h3>
+
+            <p>
+                Rahul's flight ticket and Aman's hotel booking
+                are still pending. Complete these documents before
+                the trip departure date.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 TripBoard. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
