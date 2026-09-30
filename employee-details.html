@@ -1,46 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripBoard - Employee Details</title>
-
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-dark": "#071D3A",
+                        "primary-blue": "#172B4D",
+                        "brand-blue": "#2E5BFF",
+                        "bg-ice": "#EAF5FC",
+                        "accent-gold": "#D4AF37",
+                        "accent-gold-hover": "#A98717",
+                        "gold-btn": "#C9A227",
+                        "gold-btn-hover": "#A98717",
+                        "gold-light": "#F4D675",
+                        "status-green": "#2ECC71",
+                        "status-orange": "#F39C12",
+                        "footer-text": "#B8C9DA",
+                    },
+                    borderRadius: {
+                        "xl": "12px",
+                        "2xl": "16px",
+                    },
+                    boxShadow: {
+                        "card": "0 4px 20px rgba(0,0,0,0.08)",
+                        "nav": "0 4px 20px rgba(7,29,58,0.25)",
+                        "btn-gold": "0 4px 10px rgba(201,162,39,0.35)",
+                        "btn-gold-hover": "0 6px 15px rgba(201,162,39,0.50)",
+                    },
+                    fontFamily: {
+                        sans: ["Arial", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 
-<body class="employee-details-page">
+<body class="employee-details-page min-h-screen flex flex-col justify-between">
 
 
 <!-- =========================
      HEADER
      ========================= -->
 
-<header class="dashboard-header">
+<header class="!min-h-[110px] md:!h-[125px] !h-auto relative !flex flex-col md:flex-row !items-center !justify-between px-6 md:px-10 py-3 md:py-0 gap-3 md:gap-0 bg-cover bg-right md:bg-center bg-no-repeat shadow-nav border-b border-slate-200 before:!hidden" style="background-image: url('Assets/bg2.png'); background-color: #0c3370;">
 
-    <div class="dashboard-logo">
-        TRIPBOARD
-    </div>
+    <!-- Left: Brand Lockup with logo_svg.svg -->
+    <a href="admin.html" class="relative z-10 flex items-center gap-3.5 group text-decoration-none">
+        <img src="Assets/logo_svg.svg" alt="TripBoard Logo" class="h-12 md:h-14 w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] transition-transform duration-300 group-hover:scale-105">
+        <div class="flex flex-col">
+            <span class="text-white font-black text-2xl md:text-[27px] tracking-[2px] leading-none drop-shadow-md">TRIPBOARD</span>
+            <span class="text-sky-200/90 text-[10px] md:text-[11px] font-medium tracking-wider mt-1 leading-none drop-shadow-sm">Corporate Travel Management. Simplified.</span>
+        </div>
+    </a>
 
-    <nav>
-
-        <a href="admin.html">
-            Dashboard
-        </a>
-
-        <a href="employees.html" class="active">
-            Employees
-        </a>
-
-        <a href="trips.html">
-            Trips
-        </a>
-
-        <a href="home.html" class="logout-btn">
+    <!-- Right: Navigation Links + Gold Logout Button -->
+    <nav class="relative z-10 !flex items-center gap-6 md:gap-8">
+        <a href="admin.html" class="text-white font-semibold text-sm md:text-[15px] drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)] transition-all duration-200 hover:text-gold-light hover:-translate-y-0.5">Dashboard</a>
+        <a href="employees.html" class="text-gold-light font-semibold text-sm md:text-[15px] border-b-2 border-accent-gold pb-0.5 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">Employees</a>
+        <a href="trips.html" class="text-white font-semibold text-sm md:text-[15px] drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)] transition-all duration-200 hover:text-gold-light hover:-translate-y-0.5">Trips</a>
+        <a href="index.html" class="bg-gold-btn hover:bg-gold-btn-hover text-white text-sm font-semibold py-2 px-5 rounded-md shadow-btn-gold hover:shadow-btn-gold-hover hover:-translate-y-0.5 transition-all duration-200 !text-white text-decoration-none">
             Logout
         </a>
-
     </nav>
 
 </header>
@@ -416,12 +448,8 @@
      FOOTER
      ========================= -->
 
-<footer>
-
-    <p>
-        © 2026 TripBoard. All Rights Reserved.
-    </p>
-
+<footer class="!bg-primary-dark !text-footer-text text-center py-5 px-4 text-sm mt-auto">
+    <p class="m-0">© 2026 TripBoard. All Rights Reserved.</p>
 </footer>
 
 
